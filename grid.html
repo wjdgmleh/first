@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>web2 그리드</title>
+    <style>
+      h1{
+        border-bottom:2px solid black;
+        text-align:center;
+        margin:0px;
+        font-size:70px
+      }
+      .cs{
+        border-right:2px solid black;
+        text-align:center;
+        font-size:20px;
+        margin-right:0px;
+      }
+      .a{
+        margin-left:0px;
+        font-size:20px
+      }
+      .b{
+        border:1px solid black;
+        margin-left:50%;
+      }
+      #g{
+        border:0px solid pink;
+        display:grid;
+        grid-template-columns:250px 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>grid</h1>
+    <div id="g">
+      <div class="cs"><ol><li><a href="https://opentutorials.org/course/3086/18322" target="_blank">관련 강의</a></li><br>
+      <li><a href="2.html">css강의로 가기</a></li><br>
+      <li><a href="box.html">박스모델 강의로 가기</a></li></ol></div>
+      <span class="a">나머지 공간을 다쓴다는 의미로 1fr을 쓴다 2fr일경우 왼족과 오른쪽이 2:1비율이 된다<br>
+      왼쪽은 250px을 고정적으로 갖고 오른쪽은 상황에 따라서 크기가 변동 된다</span>
+    </div>
+  </body>
+</html>
